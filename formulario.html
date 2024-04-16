@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logoReyToro.png" alt="Logotipo">
+        </a>
+    </header>
+    
+    <main class="contenedor">
+        <h1>Contáctame</h1>
+        <div class="centrar_parrafo">
+            <p>Si buscas una empresa comprometida, rápida y con calidad en sus productos, ¡no dudes en contactarnos!.</p>
+            <p>Te dejo el siguiente formulario:</p>
+        </div>
+ 
+        <form action="#" method="post" class="formulario">
+            <fieldset class="formulario-tipo">
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+                <label for="telefono">Teléfono personal</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+                <label for="comentarios">Motivo del contacto</label>
+                <textarea name="comentarios" id="comentarios" cols="100" rows="5" placeholder="Coloca tu comentario aquí"></textarea>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Rey Toro Delivery S.A. Todos los derechos reservados &copy;</p>
+    </footer>
+</body>
+</html>
