@@ -1,0 +1,34 @@
+body{
+    vertical-align: middle;
+    background-color: black;
+}
+.img-izq{
+    float: left;
+}
+
+.boton_catalogo{
+    background-color: rgb(59, 221, 23);
+    width: 500px;
+    border: 10px;
+    padding: 20px 32px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.boton_formulario{
+    background-color: rgb(17, 144, 212);
+    width: 500px;
+    border: 10px;
+    padding: 20px 32px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.boton_catalogo:hover {
+    background-color: #00c703;
+}
+.boton_formulario:hover{
+    background-color: rgb(60, 60, 192);
+}

@@ -99,187 +99,224 @@ h3 {
     color: var(--secundario);
 }
 
-/** Grid **/
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/** Productos **/
-.producto {
-    background-color: var(--primarioOscuro);
-    padding: 1rem;
-}
-
-.producto__nombre {
-    font-size: 4rem;
-}
-.producto__precio {
-    font-size: 2.8rem;
-    color: var(--secundario);
-}
-.producto__nombre,
-.producto__precio {
-    font-family: var(--fuentePrincipal);
-    margin: 1rem 0;
+/*Iconos Publicitarios*/
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
-    line-height: 1.2;
 }
 
-/** Graficos **/
-.grafico {
-    min-height: 30rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 1 / 3;
-}
-.grafico--camisas {
-    grid-row: 2 / 3;
-    background-image: url(../img/la_vega.jpg);
-}
-.grafico--node {
-    background-image: url(../img/la_vega2.png);
-    grid-row: 8 / 9;
+h2 span {
+    color: var(--secundario);
+    font-size: 1.5em;
 }
 
-@media (min-width: 768px) {
-    .grafico--node {
-        grid-row: 5 / 6;
-        grid-column: 2 / 4;
-    }
+h3.comprar__titulo {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-/** Nosotros **/
-.nosotros {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-}
-@media (min-width: 768px) {
-    .nosotros {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
-}
-.nosotros__imagen {
-    grid-row: 1 / 2;
-}
-@media (min-width: 768px) {
-    .nosotros__imagen {
-       grid-column: 2 / 3;
-    }
-}
-
-/** Bloques **/
 .bloques {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-@media (min-width: 768px) {
-    .bloques {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .bloque {
-    text-align: center;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    background-image: url(../img/afiche-1080x1080-rey-toro2.jpg);
+}
+
+.bloque:hover {
+    transform: translateY(-5px);
+}
+
+.bloque__imagen {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
 }
 
 .bloque__titulo {
-    margin: 0;
-}
-
-/** Pagina del Producto 
-@media (min-width: 768px) {
-    .camisa {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
-}
-
-.formulario {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-.formulario__campo {
-   border: 1rem solid var(--primarioOscuro);
-   background-color: transparent;
-   color: var(--blanco);
-   font-size: 2rem;
-   font-family: Arial, Helvetica, sans-serif;
-   padding: 1rem;
-   appearance: none;
-}
-.formulario__submit {
-    background-color: var(--secundario);
-    border: none;
-    font-size: 2rem;
+    font-size: 1.2em;
+    margin-bottom: 10px;
     font-family: var(--fuentePrincipal);
-    padding: 2rem;
-    transition: background-color .3s ease;
-    grid-column: 1 / 3;
+    color: var(--blanco);
+    font-weight: bold;
 }
-.formulario__submit:hover {
-    cursor: pointer;
-    background-color: var(--secundarioOscuro);
-}
-**/
 
-/** Landing Page **/
-.landingPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--negro);
+p {
+    font-size: 1em;
+    color: var(--blanco);
+    margin-bottom: 10px;
+    font-family: var(--fuentePrincipal);
+}
+
+/* Estilos para la Landing Page */
+/* Variables de colores */
+:root {
+    --negro: #000;
+    --verde: rgb(59, 221, 23);
+    --verde-oscuro: #08aa0a;
+    --azul: rgb(17, 144, 212);
+    --azul-oscuro: rgb(60, 60, 192);
 }
 
 .landingPage__content {
-    display: flex;
+    display: block;
     align-items: center;
-    justify-content: space-between; /* Espacio entre la imagen y los botones */
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
+    justify-content: center; 
+    padding: 2rem;
+}
+
+.header__logo {
+    max-width: max-content; /* Tamaño máximo de la imagen */
+    margin-right: 40px; /* Espacio entre la imagen y los botones */
 }
 
 .botones {
-    margin-top: 20px; /* Espacio entre la imagen y los botones */
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 5rem 5rem;
 }
 
 .boton_catalogo,
 .boton_formulario {
-    background-color: rgb(59, 221, 23);
-    width: 400px;
+    background-color: var(--verde);
+    font-family: var(--fuentePrincipal);
+    width: max-content; /* Ajusta el ancho según sea necesario */
     border: none;
-    padding: 30px 50px;
+    padding: 5rem 15rem; /* Aumenta el padding para hacer los botones más grandes */
     text-align: center;
     color: #fff;
-    font-size: 25px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    font-size: 24px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .boton_formulario {
-    background-color: rgb(17, 144, 212);
+    background-color: var(--azul);
 }
 
 .boton_catalogo:hover {
-    background-color: #08aa0a;
+    background-color: var(--verde-oscuro);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .boton_formulario:hover {
-    background-color: rgb(60, 60, 192);
+    background-color: var(--azul-oscuro);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.boton_catalogo:active,
+.boton_formulario:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+/*Testimonios*/
+.testimonials-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+
+.testimonial-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    background-image: url(../img/clientes-felices-clientes-vector-icono_116137-4022.avif);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-text {
+    font-size: 1em;
+    color: var(--negro);
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--negro);
+    text-align: right;
+}
+
+/*Políticas*/
+.policy-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.policy-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 100px;
+}
+
+.policy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    font-family: var(--fuentePrincipal);
+    text-align: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+}
+
+.policy a {
+    margin-top: 2rem;
+    text-decoration: none;
 }
 
 /*Página Contacto*/
