@@ -142,10 +142,10 @@ h3 {
 }
 .grafico--camisas {
     grid-row: 2 / 3;
-    background-image: url(../fotos/la_vega.jpg);
+    background-image: url(../img/la_vega.jpg);
 }
 .grafico--node {
-    background-image: url(../fotos/la_vega2.png);
+    background-image: url(../img/la_vega2.png);
     grid-row: 8 / 9;
 }
 
