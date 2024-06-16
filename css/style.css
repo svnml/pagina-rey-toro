@@ -225,7 +225,7 @@ h3.comprar__titulo {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--blanco);
     margin-bottom: 10px;
     font-family: var(--fuentePrincipal);
@@ -389,7 +389,7 @@ p {
 /*Formulario:*/
 .contenedor .formulario {
     background-color: var(--primarioOscuro);
-    border-radius: 20px;
+    border-radius: 50px;
     max-width: 50rem;
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -405,17 +405,17 @@ p {
         margin-bottom: 8rem;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 1%;
+        border-radius: 20px;
     }
 }
 
-.formulario fieldset {
+.formulario {
     padding: 20px;
     border: none;
 }
 
 legend {
-    color: var(--blanco);
+    color: var(--secundario);
     margin-bottom: 2rem;
     font-size: larger;
     font-weight: bold;
@@ -432,7 +432,7 @@ label {
     color: var(--blanco); /* Color del texto */
 }
 
-input, textarea {
+input, textarea, button {
     width: 100%; /* Ancho completo del contenedor */
     padding: 10px; /* Espaciado interno */
     margin-bottom: 15px; /* Espacio inferior entre campos */
@@ -443,7 +443,7 @@ input, textarea {
 }
 
 /*css al botón enviar*/
-input[type="submit"] { 
+button[type="submit"] { 
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
@@ -452,11 +452,11 @@ input[type="submit"] {
     color: var(--primarioOscuro);
     font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: greenyellow;
 }
 
