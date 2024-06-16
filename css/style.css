@@ -4,7 +4,7 @@
     --secundario: #FFCE00;
     --secundarioOscuro: rgb(233, 187, 2);
     --blanco: #FFF;
-    --negro: #000;
+    --negro: #171717;
 
     --fuentePrincipal: 'Staatliches', cursive;
 }
@@ -47,7 +47,6 @@ h1, h2, h3 {
 }
 h1 {
     font-size: 4rem;
-    background-color: var(--negro);
     padding: 1rem 0;
     display: flex;
     justify-content: center;
@@ -55,7 +54,6 @@ h1 {
 }
 h2 {
     font-size: 3.2rem;
-    background-color: #000;
 }
 h3 {
     font-size: 2.4rem;
@@ -66,10 +64,17 @@ h3 {
     display: flex;
     justify-content: center;
     background-color: var(--negro);
+
 }
 .header__logo {
-    margin: 3rem 0;
+    height: 150px;
+    width: 150px;
 }
+
+.img_landing {
+    border-radius: 8rem;
+}
+
 /** Footer **/
 .footer {
     background-color: var(--negro);
@@ -83,11 +88,13 @@ h3 {
 }
 /** Navegacion **/
 .navegacion {
-    background-color: var(--blanco);
+    background-color: var(--primarioOscuro);
     padding: 1rem 0;
     display: flex;
     justify-content: center;
     gap: 2rem; 
+    position: sticky;
+    top: -1px;
 }
 .navegacion__enlace {
     font-family: var(--fuentePrincipal);
@@ -124,7 +131,7 @@ h3 {
 }
 .producto__precio {
     font-size: 2.8rem;
-    color: var(--secundario);
+    color: var(--primarioOscuro);
 }
 .producto__nombre,
 .producto__precio {
@@ -242,8 +249,8 @@ p {
 }
 
 .header__logo {
-    max-width: max-content; /* Tamaño máximo de la imagen */
-    margin-right: 40px; /* Espacio entre la imagen y los botones */
+    max-width: max-content; /* Tamaño máximo de la imagen */ /* Espacio entre la imagen y los botones */
+    border-radius: 5rem;
 }
 
 .botones {
@@ -251,6 +258,7 @@ p {
     align-items: center;
     justify-content: center;
     padding: 5rem 5rem;
+    gap: 7rem;
 }
 
 .boton_catalogo,
@@ -380,18 +388,18 @@ p {
 /*Página Contacto*/
 /*Formulario:*/
 .contenedor .formulario {
-    background-color: var(--negro);
+    background-color: var(--primarioOscuro);
+    border-radius: 20px;
     max-width: 50rem;
     margin-top: 8rem;
     margin-bottom: 8rem;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1%;
 }
 
 @media (min-width: 768px) {
     .contenedor .formulario {
-        background-color: var(--negro);
+        background-color:var(--primarioOscuro);
         max-width: 80rem;
         margin-top: 8rem;
         margin-bottom: 8rem;
@@ -399,6 +407,11 @@ p {
         margin-right: auto;
         border-radius: 1%;
     }
+}
+
+.formulario fieldset {
+    padding: 20px;
+    border: none;
 }
 
 legend {
@@ -409,7 +422,7 @@ legend {
 }
 
 fieldset {
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 label { 
@@ -424,7 +437,7 @@ input, textarea {
     padding: 10px; /* Espaciado interno */
     margin-bottom: 15px; /* Espacio inferior entre campos */
     border: 1px solid var(--secundarioOscuro); /* Borde de 1px sólido gris */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 20px; /* Bordes redondeados */
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
     font-size: 16px; /* Tamaño de la fuente */
 }
@@ -436,7 +449,7 @@ input[type="submit"] {
     padding: 10px 20px;
     font-size: 2rem;
     background-color: var(--blanco);
-    color: var(--secundario);
+    color: var(--primarioOscuro);
     font-weight: bold;
     border: none;
     border-radius: 4px;
