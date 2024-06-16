@@ -1,6 +1,6 @@
 :root {
-    --primario: #9C27B0;
-    --primarioOscuro: #89119D;
+    --primario: #82CB40;
+    --primarioOscuro: #2F7D00;
     --secundario: #FFCE00;
     --secundarioOscuro: rgb(233, 187, 2);
     --blanco: #FFF;
@@ -114,8 +114,9 @@ h3 {
 
 /** Productos **/
 .producto {
-    background-color: var(--primarioOscuro);
+    background-color: var(--primario);
     padding: 1rem;
+    border-radius: 20px;
 }
 
 .producto__nombre {
@@ -449,4 +450,48 @@ input[type="submit"]:hover {
 .centrar_parrafo {
     text-align: center;
     padding-top: 2rem;
+}
+
+
+
+/* overlay */
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.producto img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: var(--primarioOscuro);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
 }
