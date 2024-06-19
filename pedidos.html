@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Rey Toro</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="landingPage.html">
+            <img class="header__logo" src="img/logoReyToro.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="landingPage.html">Inicio</a>
+        <a class="navegacion__enlace" href="catalogo.html">Catalogo</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace" href="formulario.html">Contactanos</a>
+    </nav>
+    <section class="contenedor">
+        <div class="contenedor-infocrud">
+            <h1 class="margen-h2">Panel de Administración y Registro de Pedidos</h1>
+            <div class="centrar_parrafo">
+                <p><span class="enfasis-crud">¡Bienvenido al panel de administración de "Rey Toro Delivery"!</span> Aquí puedes gestionar los pedidos de frutas y verduras a domicilio de forma sencilla. A continuación, te explicamos cómo crear, leer, actualizar y eliminar pedidos utilizando la interfaz de usuario del sistema.</p>
+                <br>
+                <p>***Rellena los campos del formulario y dar click en botón <span class="enfasis-crud">"GENERAR PEDIDO"</span> para <span class="enfasis-crud">CREAR</span> un nuevo pedido.</p>
+                <p>***Para poder <span class="enfasis-crud">VISUALIZAR</span> los pedidos, tras dar click en <span class="enfasis-crud">"GENERAR PEDIDO"</span>, se desplegará una tabla resumen con todos ellos.</p>
+                <p>***Para actualizar un pedido, dar click en <span class="enfasis-crud">EDITAR</span> y hacer los cambios pertinentes en los campos correspondientes.</p>
+                <p>***Para <span class="enfasis-crud">ELIMINAR</span> un pedido ingresado, en la tabla resumen de pedidos, dar click en <span class="enfasis-crud">ELIMINAR</span>.</p>
+            </div>
+        </div>
+        <!--formulario pedidos-->
+        <form id="contacto" action="#" method="post" class="formulario">
+            <fieldset class="formulario-tipo">
+                <legend>Nuevo Pedido Rey Toro Delivery</legend>
+                <label for="idPedido">ID Pedido</label>
+                <input type="number" id="idPedido" name="idPedido" placeholder="000">
+                <label for="nombrePedido">Nombre Pedido</label>
+                <input type="text" id="nombrePedido" name="nombrePedido" placeholder="Pedido de [Nombre Cliente]">
+                <label for="costoPedido">Costo Total Pedido</label>
+                <input type="number" id="costoPedido" name="costoPedido" placeholder="999999">
+                <label for="fechaEntrega">Fecha Entrega</label>
+                <input type="date" id="fechaEntrega" name="fechaEntrega" placeholder="00/00/0000">
+                <label for="comentarios">Comentario Cliente</label>
+                <textarea name="comentarioCliente" id="comentarioCliente" cols="100" rows="5" placeholder="Coloca tu comentario aquí máximo 20 caracteres" maxlength="20"></textarea>
+                <br><br><br>
+                <input type="submit" value="Generar Nuevo Pedido">
+            </fieldset>
+        </form>
+        <!--Tabla pedidos-->
+        <h3>Resumen de Pedidos</h3>
+        <table id="contact-table">
+            <thead>
+                <tr>
+                    <th>ID Pedido</th>
+                    <th>Nombre Pedido</th>
+                    <th>Costo Total Pedido</th>
+                    <th>Fecha Entrega</th>
+                    <th>Comentario Cliente</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">Ferdinando Stagnaro - +56992417052 - @reytoro_delivery</p>
+        <p class="footer__texto">Rey Toro Delivery S.A. Todos los derechos reservados &copy;</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

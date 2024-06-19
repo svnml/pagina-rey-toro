@@ -422,6 +422,7 @@ p {
 .formulario {
     padding: 20px;
     border: none;
+    font-family: var(--fuentePrincipal);
 }
 
 legend {
@@ -436,23 +437,23 @@ fieldset {
 }
 
 label { 
-    display: block; /* Mostrar cada etiqueta en una línea separada */
-    margin-bottom: 5px; /* Espacio inferior entre etiquetas */
-    font-weight: bold; /* Fuente en negrita */
-    color: var(--blanco); /* Color del texto */
-}
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: var(--blanco);
+}  
 
 input, textarea, button {
-    width: 100%; /* Ancho completo del contenedor */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 15px; /* Espacio inferior entre campos */
-    border: 1px solid var(--secundarioOscuro); /* Borde de 1px sólido gris */
-    border-radius: 20px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-    font-size: 16px; /* Tamaño de la fuente */
-}
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid var(--secundarioOscuro);
+    border-radius: 20px; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+} 
 
-/*css al botón enviar*/
+css al botón enviar
 button[type="submit"] { 
     display: block;
     margin: 0 auto;
@@ -468,12 +469,118 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: greenyellow;
-}
+} */ 
 
 .centrar_parrafo {
     text-align: center;
     padding-top: 2rem;
 }
+
+/*TESTEANDO PAGINA PEDIDOS*/
+
+.centrar_parrafo {
+    p { 
+        font-family: var(--fuentePrincipal);
+        color: var(--negro);
+        justify-content: left;
+        text-align: left;
+    }
+}
+
+.margen-h2 {
+    margin-bottom: 5rem;
+    font-family: var(--fuentePrincipal);
+}
+
+.contenedor-infocrud {
+    background-image: url(../img/fondo_blanco.jpg);
+    padding: 5rem;
+    border-radius: 10%;
+}
+
+.enfasis-crud {
+    color: rgb(123, 3, 3);
+    font-weight: bold;
+}
+
+/* CRUD Formulario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--negro); /* Fondo blanco para la tabla */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegurar que los bordes redondeados se apliquen a toda la tabla */
+}
+
+th, td {
+    padding: 15px; /* Aumentar el padding para más espacio */
+    text-align: left;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+}
+
+th {
+    background-color: var(--secundario); /* Fondo oscuro para encabezados */
+    color: var(--blanco); /* Texto blanco */
+    font-weight: bold; /* Negrita para encabezados */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    font-family: var(--fuentePrincipal);
+}
+
+
+
+tr:hover {
+    background-color: var(--primario); /* Fondo diferente al pasar el mouse */
+    color: var(--blanco); /* Color de texto blanco */
+}
+
+.crud-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.crud-actions button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.crud-actions .edit {
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+.crud-actions .delete {
+    background-color: red;
+    color: var(--blanco);
+}
+
+.crud-actions .edit:hover, .crud-actions .delete:hover {
+    opacity: 0.8;
+}
+
+
+/*info del cliente*/
+#resultado {
+    text-align: left;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-color: var(--secundarioOscuro);
+    font-weight: bold;
+    background-image: url(../img/videojuegos2.jpg);
+    max-width: 80rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 
 /* overlay */
