@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logoReyToro.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" placeholder="Nombre de Usuario *" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Contraseña *" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p id="error-message" class="error"></p>
+        </div>
+        <script src="js/login.js"></script>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Rey Toro Delivery S.A. Todos los derechos reservados &copy;</p>
+    </footer>
+</body>
+</html>
