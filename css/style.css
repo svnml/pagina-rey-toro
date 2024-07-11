@@ -745,3 +745,7 @@ tr:hover {
     color: red;
     display: none;
 }
+
+.centrar_parrafo p {
+    color: var(--blanco);
+}
